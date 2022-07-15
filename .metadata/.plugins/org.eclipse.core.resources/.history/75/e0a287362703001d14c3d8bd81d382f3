@@ -1,0 +1,4 @@
+public class MessageSubscriber {
+	public void printMessage(){
+	}
+}

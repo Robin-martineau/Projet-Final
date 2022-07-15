@@ -1,0 +1,30 @@
+
+public class Celsius {
+	private double degrees;
+	private ButtonMoins bMoins;
+	
+	Celsius(double aDegrees, ButtonMoins b2){
+	 setDegrees(aDegrees);
+	 setbMoins(b2);
+	}
+	
+	public void plus() {
+		setDegrees(getDegrees()+1);
+	}
+	
+	public void moins() {
+		setDegrees(getDegrees()-1);
+	}
+	
+	public double getDegrees(){
+	return degrees;
+	}
+	
+	public void setDegrees(double aDegrees){
+	degrees = aDegrees;
+	}
+
+	public void setbMoins(ButtonMoins bMoins) {
+		this.bMoins = bMoins;
+	}
+}

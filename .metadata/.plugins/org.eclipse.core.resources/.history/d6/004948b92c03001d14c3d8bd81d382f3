@@ -1,0 +1,7 @@
+public class MessageSubscriber {
+	private MessagePublisher pub;
+	
+	public void printMessage(){
+		System.out.println("Goo");
+	}
+}

@@ -1,0 +1,6 @@
+public class MessageSubscriberOne extends MessageSubscriber{
+    @Override
+    public void printMessage(Message m) {
+        System.out.println("MessageSubscriberOne :: ");
+    }
+}

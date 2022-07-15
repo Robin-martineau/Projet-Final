@@ -1,0 +1,7 @@
+
+public class CelsiusThermometre extends Thermometre {
+	
+	public void update(Celsius m) {
+    	setText("Temperature in Celsius: " + m.getTemp());
+    }
+}

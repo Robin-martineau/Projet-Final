@@ -1,0 +1,12 @@
+public class MessageSubscriber {
+	private MessagePublisher pub;
+	
+	public MessageSubscriber(MessagePublisher pub) {
+		super();
+		this.pub = pub;
+	}
+
+	public void printMessage(){
+		System.out.println("Goo");
+	}
+}

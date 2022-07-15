@@ -1,0 +1,25 @@
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+    	Display display = new Display();
+
+        Button b1Moins = new Button(display);
+        Button b1Plus = new Button(display);
+        
+        Celsius t = new Celsius(0);
+        
+        b1Moins.add(t);
+        b1Plus.add(t);
+        
+        FahrenheitThermometer tf = new FahrenheitThermometer(t, display);
+        CelsiusThermometer tc = new CelsiusThermometer(t, display);
+        tf.setTempSource(t);
+        t.add(tc);
+        t.add(tf);
+        
+        t.setDegrees(15);
+        t.setDegrees(20);        
+        
+    }
+}

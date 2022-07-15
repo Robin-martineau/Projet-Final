@@ -1,0 +1,6 @@
+
+public class MessageSubscriber implements Observer {
+	public void update(){
+		
+	}
+}

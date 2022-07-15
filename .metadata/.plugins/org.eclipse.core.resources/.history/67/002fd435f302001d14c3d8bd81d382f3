@@ -1,0 +1,16 @@
+import java.awt.Label;
+
+public class Thermometer extends Label{
+	private Celsius tempSource;
+	
+	public void setTempSource(Celsius atempSource, Display display){
+	tempSource = atempSource;
+	display.addToFrame(this);
+	}
+	
+	public Celsius getTempSource(){
+	return tempSource;
+	}
+	
+	public void drawTemperature(){}
+}

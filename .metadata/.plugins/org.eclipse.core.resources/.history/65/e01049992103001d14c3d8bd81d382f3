@@ -1,0 +1,7 @@
+
+public class FahrenheitThermometre extends Thermometre{
+
+	public void update(Celsius m) {
+    	System.out.println("Temperature in Fahrenheit: " + m.getTemp());
+    }
+}

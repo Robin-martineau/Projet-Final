@@ -1,0 +1,33 @@
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
+
+
+class Button extends java.awt.Button {
+
+    static final Color  defaultBackgroundColor = Color.gray;
+    static final Color  defaultForegroundColor = Color.black;
+    static final String DefaultTexte = "-";
+    private int incr = 1;
+
+    Button(Display display) {
+        super();
+        setLabel(DefaultTexte);
+        setBackground(defaultBackgroundColor);
+        setForeground(defaultForegroundColor);
+        addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    Button.this.click();
+                }
+            });
+        display.addToFrame(this);
+    }
+
+	public int getIncr() {
+		return incr;
+	}
+
+	public void click() {}
+}

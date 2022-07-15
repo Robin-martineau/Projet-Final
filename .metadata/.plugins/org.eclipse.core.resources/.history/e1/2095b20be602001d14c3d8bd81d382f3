@@ -1,0 +1,12 @@
+
+aspect ObserverCelsiusPlus extends ObserverPattern {
+
+	declare parents: ButtonMoins implements Subject;
+	public Object ButtonMoins.getData() { return this; }
+	declare parents: Celsius implements Observer;
+	public void Celsius.update() {
+		moins();
+	}
+	pointcut stateChanges(Subject s): target(s) &&
+	call(void ButtonMoins.click());
+}

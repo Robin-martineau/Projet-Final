@@ -1,0 +1,10 @@
+
+public class FahrenheitThermometer extends Thermometer{
+	public FahrenheitThermometer(Celsius tempSource, Display display) {
+		super(tempSource, display);
+	}
+
+	public void drawTemperature(Celsius m) {
+    	setText("Temperature"+ getTempSource().getDegrees() + " C°");
+    }
+}

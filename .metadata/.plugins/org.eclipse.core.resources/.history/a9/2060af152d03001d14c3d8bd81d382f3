@@ -1,0 +1,21 @@
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        MessageSubscriberOne s1 = new MessageSubscriberOne();
+        MessageSubscriberTwo s2 = new MessageSubscriberTwo();
+        MessageSubscriberThree s3 = new MessageSubscriberThree();
+         
+        MessagePublisher p = new MessagePublisher();
+         
+        p.addObserver(s1);
+        p.addObserver(s2);
+         
+        p.publish("First Message");   //s1 and s2 will receive the update
+         
+        p.removeObserver(s1);
+        p.addObserver(s3);
+         
+        p.publish("Second Message"); //s2 and s3 will receive the update
+    }
+}

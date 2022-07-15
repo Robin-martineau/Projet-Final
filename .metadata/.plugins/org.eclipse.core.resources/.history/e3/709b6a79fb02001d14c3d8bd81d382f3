@@ -1,0 +1,6 @@
+
+public interface SubjectBtn {
+    public void attach(Observer o);
+    public void detach(Observer o);
+    public void notifyUpdate(Button m);
+}

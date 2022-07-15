@@ -1,0 +1,7 @@
+
+public class CelsiusThermometer extends Thermometer {
+
+	public void drawTemperature(Celsius m) {
+    	setText("Temperature"+ getTempSource().getDegrees() + " C°");
+    }
+}

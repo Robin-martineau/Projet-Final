@@ -1,0 +1,30 @@
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+    	Display display = new Display();
+
+        Button btn1 = new Button(display);
+        Celsius t1 = new Celsius(15, "Paris");
+        btn1.add(t1);
+        FahrenheitThermometer tf = new FahrenheitThermometer(t1, display);
+        CelsiusThermometer tc = new CelsiusThermometer(t1, display);
+        t1.add(tc);
+        t1.add(tf);
+        
+        Button btn1 = new Button(display);
+        
+        Celsius t1 = new Celsius(0, "Paris");
+        
+        btn1.add(t1);
+        
+        FahrenheitThermometer tf = new FahrenheitThermometer(t1, display);
+        CelsiusThermometer tc = new CelsiusThermometer(t1, display);
+        
+        t1.add(tc);
+        t1.add(tf);
+        
+        t1.setDegrees(15);  
+        
+    }
+}

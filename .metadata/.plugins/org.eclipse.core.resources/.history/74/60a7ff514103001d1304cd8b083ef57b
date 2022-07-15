@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
+ 
+public class MessagePublisher {
+private String messageToPublish;
+
+	public void publish(String m){
+		this.messageToPublish = m;
+		System.out.println("I want to send this message : " + m);
+	}
+	
+	public String getMessage(){
+		return this.messageToPublish;
+	}
+}

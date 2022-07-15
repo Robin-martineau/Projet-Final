@@ -1,0 +1,34 @@
+
+public class Celsius {
+	private double degrees;
+	private String ville;
+	
+	Celsius(double aDegrees, String ville){
+	 setDegrees(aDegrees);
+	 
+	}
+	
+	public String getVille() {
+		return ville;
+	}
+
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+
+	public void plus() {
+		setDegrees(getDegrees()+1);
+	}
+	
+	public void moins() {
+		setDegrees(getDegrees()-1);
+	}
+	
+	public double getDegrees(){
+	return degrees;
+	}
+	
+	public void setDegrees(double aDegrees){
+	degrees = aDegrees;
+	}
+}
